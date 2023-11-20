@@ -42,7 +42,7 @@ O resultado esperado é uma código com pyspark que retorne o total liquido da e
 ## Caminho da arquitetura:
 ![Desafio 4 - Arquitura GCP.](/desafio_4_arquitetura_gcp.png)
 ```
-Para a solução de arquitura apresentada, busquei utilizar varios serviços GCP serveless, o que pode baratear o custo da infra.
+Para a solução de arquitetura apresentada, busquei utilizar vários serviços GCP serveless, o que pode baratear o custo da infra.
 
 Os processamentos e consultas de api, utilizam cloud functions, por se adaptar bem a execução de trechos de código sem a necessidade de grande infra.
 
