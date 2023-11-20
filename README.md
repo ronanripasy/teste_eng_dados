@@ -48,7 +48,8 @@ Os processamentos e consultas de api, utilizam cloud functions, por se adaptar b
 
 O Cloud Scheduler, é uma boa opção para o agendamento de tarefas baseado em horário definido.
 
-Pensando em melhoria da solução, levando em consideração outro fatores como maior disponibilidade de recursos e a necessidade de um maior controle sobre o workflow dos dados, vejo 2 opções que podem suprir. Uma delas é o Cloud Composer, que é o Airflow gerenciado pelo Google, essa opção é vantajosa pois apresenta varios Executores(executors) que facilitam o trabalho com n fontes de dados e outros serviços GCP, como Bigquery, Cloud SQL, cloud storage e outros.
+Pensando em melhoria da solução, levando em consideração outro fatores como maior disponibilidade de recursos e a necessidade de um maior controle sobre o workflow dos dados, vejo 2 opções que podem suprir.
+Uma delas é o Cloud Composer, que é o Airflow gerenciado pelo Google, essa opção é vantajosa pois apresenta varios Executores(executors) que facilitam o trabalho com n fontes de dados e outros serviços GCP, como Bigquery, Cloud SQL, cloud storage e outros.
 A segunda opção é o Data Fusion, um serviço GCP que se assemelha ao Pentaho, o que facilita o trabalho de usuários que não tem dominio ou vivencia com desenvolvimento Python, o que seria indispensavel para o uso do Composer/Airflow.
 ```
 
