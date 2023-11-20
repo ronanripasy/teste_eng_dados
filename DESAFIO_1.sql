@@ -1,6 +1,8 @@
 /*
+
 Para o primeiro desafio optei por usar SQL, pelo fato da origem ser uma base de dados SQLSERVER.
 Logo mais abaixo comento os trecho de codigo e pontuo algumas decisões.
+
 */
 
 -- Para essa analise, optei por usar CTE por ver a necessidade de fazer reaproveitamento de consultas, e também para facilitar a leitura do código SQL
