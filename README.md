@@ -39,6 +39,19 @@ O resultado esperado é uma código com pyspark que retorne o total liquido da e
 - Descrições de funcionamento (se necessário);
 - Nomes de tecnologias em ecossistema GCP (serviços, conectores, bibliotecas e módulos).
 
+## Caminho da arquitetura:
+![Desafio 4 - Arquitura GCP.](/desafio_4_arquitetura_gcp.png)
+```
+Para a solução de arquitura apresentada, busquei utilizar varios serviços GCP serveless, o que pode baratear o custo da infra.
+
+Os processamentos e consultas de api, utilizam cloud functions, por se adaptar bem a execução de trechos de código sem a necessidade de grande infra.
+
+O Cloud Scheduler, é uma boa opção para o agendamento de tarefas baseado em horário definido.
+
+Pensando em melhoria da solução, levando em consideração outro fatores como maior disponibilidade de recursos e a necessidade de um maior controle sobre o workflow dos dados, vejo 2 opções que podem suprir. Uma delas é o Cloud Composer, que é o Airflow gerenciado pelo Google, essa opção é vantajosa pois apresenta varios Executores(executors) que facilitam o trabalho com n fontes de dados e outros serviços GCP, como Bigquery, Cloud SQL, cloud storage e outros.
+A segunda opção é o Data Fusion, um serviço GCP que se assemelha ao Pentaho, o que facilita o trabalho de usuários que não tem dominio ou vivencia com desenvolvimento Python, o que seria indispensavel para o uso do Composer/Airflow.
+```
+
 Será apreciado como esforço extra se você conseguir avançar mais na aplicação além desse ponto.
 
 Lembre-se que, como parte dos entregáveis anteriores, esperamos que alguns comentários sejam incluídos em suas soluções prévias; queremos entender melhor como foi seu processo de solução de problemas, quais as hipóteses levantadas e, se tivesse mais tempo, como você poderia melhorar a implementação proposta (desenvolvimento incremental).
@@ -56,8 +69,6 @@ Ou seja, temos quatro entregáveis:
 2. Qualidades dos entregáveis, tanto as soluções quanto a arquitetura proposta.
 3. Se tivesse mais tempo, o que você faria para melhorar a sua solução?
 
-
-## 
 
 “Perception is strong and sight weak. In strategy it is important to see distant things as if they were close and to take a distanced view of close things.”
 
